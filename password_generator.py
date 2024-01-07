@@ -44,13 +44,13 @@ if __name__=='__main__':
     specials = input('Do you want your password to have special characters? (Yes / No): ')
 
     if nums.lower() == 'yes' and specials.lower() == 'yes':
-        print(generate_password(min_length))
+        print('Here is Your Password: ',generate_password(min_length))
     
     elif nums.lower() == 'yes' and specials.lower() == 'no':
-        print(generate_password(min_length, True, False))
+        print('Here is Your Password: ',generate_password(min_length, True, False))
 
     elif nums.lower() == 'no' and specials.lower() == 'yes':
-        print(generate_password(min_length, False, True))
+        print('Here is Your Password: ',generate_password(min_length, False, True))
 
     else:
-        print(generate_password(min_length, False, False))
+        print('Here is Your Password: ',generate_password(min_length, False, False))
